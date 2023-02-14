@@ -19,7 +19,7 @@ from torch import zeros
 from torch import rand
 from torch import cat
 from torch import save
-from torch import Tensor
+
 from torch import IntTensor
 
 from matplotlib import pyplot as plt
@@ -73,7 +73,7 @@ criterion = BCELoss()
 
 save(generator_network, r'models\model_epoch_000')
 
-epochs = 2
+epochs = 1
 k = 1
 
 disc_loss_data = []

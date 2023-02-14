@@ -24,7 +24,7 @@ class Discriminator(Module):
             Embedding(10, 10)
         )
         
-        self.model = Sequential(
+        self.main = Sequential(
             Linear(794, 1024),
             LeakyReLU(0.2),
             Dropout(0.3),
@@ -43,7 +43,7 @@ class Discriminator(Module):
         y = self.label_emb(labels)
         X = img.reshape(-1, 784)
         X = cat((X, y), 1)
-        outputs = self.model(X)
+        outputs = self.main(X)
         return outputs.squeeze()
 
     
@@ -59,7 +59,7 @@ class Generator(Module):
         
         self.label_emb = Embedding(10, 10)
         
-        self.model = Sequential(
+        self.main = Sequential(
             Linear(138, 256),
             LeakyReLU(0.2),
             Linear(256, 512),
@@ -74,7 +74,7 @@ class Generator(Module):
         Z = Z.view(Z.size(0), 128)
         c = self.label_emb(y)
         Z = cat([Z, c], 1)
-        outputs = self.model(Z)
+        outputs = self.main(Z)
         return outputs.view(Z.size(0), 28, 28)
 
 
