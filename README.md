@@ -18,4 +18,4 @@ Projects is written on PyTorch framework. IDE used in project is SPYDER.
 
 This is the simplest way to building GAN - both discriminator and generator are based on dense layers, with one hidden layer, BCELoss and Adam optimizer.
 
-! [100 epochs for vanilla GAN - Discriminator and Generator Based only on dense layer](https://github.com/KordianChi/MNIST_GAN/blob/main/results/vanilla_gan_result.gif)
+![100 epochs for vanilla GAN - Discriminator and Generator Based only on dense layer](https://github.com/KordianChi/MNIST_GAN/blob/main/results/vanilla_gan_result.gif)
