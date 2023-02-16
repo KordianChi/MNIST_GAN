@@ -12,7 +12,7 @@ In this project I explore four diffrent  approaches to generate MNIST image with
 
 4. Conditional Deep Convolution
 
-Projects is written on PyTorch framework. IDE used in project is SPYDER.
+Projects is written on PyTorch framework. IDE used in project is SPYDER. In all case latent space dimension is equal 128.
 
 ## Vanilla approach
 
@@ -25,3 +25,15 @@ This is the simplest way to building GAN - both discriminator and generator are 
 In this approach, discriminator and generator are based on dense layers, but with additional embedding layer. Embedding layer allows to take label info. How you can see conditional model convergence is stable.
 
 ![100 epochs for vanilla GAN - additional embedding layer](https://github.com/KordianChi/MNIST_GAN/blob/main/results/conditional_gan_result.gif)
+
+## Deep convolution approach
+
+Convolution layers are first choice for neural network working with images. Discriminator is based on free layers of 2d convolution layers, and block of dense layers for classifictation. Generator used transposed convolution layers.
+
+![100 epochs for vanilla GAN - additional embedding layer](https://github.com/KordianChi/MNIST_GAN/blob/main/results/deep_convolution_gan_result.gif)
+
+## Conditional deep convolution approach
+
+The last approach combines advantages conditional and deep convolution GAN. Convergence is stable and credible. Model is based on convolution layers with embedding layer.
+
+![100 epochs for vanilla GAN - additional embedding layer](https://github.com/KordianChi/MNIST_GAN/blob/main/results/conditional_deep_conv_gan_result.gif)
