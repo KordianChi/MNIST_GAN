@@ -30,7 +30,7 @@ In this approach, discriminator and generator are based on dense layers, but wit
 
 Convolution layers are first choice for neural network working with images. Discriminator is based on free layers of 2d convolution layers, and block of dense layers for classifictation. Generator used transposed convolution layers.
 
-![100 epochs for vanilla GAN - additional embedding layer](https://github.com/KordianChi/MNIST_GAN/blob/main/results/deep_convolution_gan_result.gif)
+![100 epochs for vanilla GAN - additional embedding layer](https://github.com/KordianChi/MNIST_GAN/blob/main/results/deep_conv_gan_result.gif)
 
 ## Conditional deep convolution approach
 
