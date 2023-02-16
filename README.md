@@ -37,3 +37,7 @@ Convolution layers are first choice for neural network working with images. Disc
 The last approach combines advantages conditional and deep convolution GAN. Convergence is stable and credible. Model is based on convolution layers with embedding layer.
 
 ![100 epochs for vanilla GAN - additional embedding layer](https://github.com/KordianChi/MNIST_GAN/blob/main/results/conditional_deep_conv_gan_result.gif)
+
+## Summary
+
+This project was for my self-education about advanced neural network architecture like GAN. Second it was my first big project with PyTorch framework.
